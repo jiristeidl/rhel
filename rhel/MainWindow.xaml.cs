@@ -62,10 +62,6 @@ namespace rhel {
 			this.tray.Visible = false;
 		}
 
-		private void Window_StateChanged(object sender, EventArgs e) {
-			this.ShowInTaskbar = (this.WindowState != System.Windows.WindowState.Minimized);
-		}
-
 		private void tray_Click(object sender, System.Windows.Forms.MouseEventArgs e) {
 			if (e.Button == System.Windows.Forms.MouseButtons.Left)
 				this.WindowState = System.Windows.WindowState.Normal;
